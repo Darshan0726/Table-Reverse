@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <table>
+    <tr>
+        <th>name</th>
+        <th>phone</th>
+    </tr>
+    <tr id="firstraw">
+        <td>ram</td>
+        <td>12345</td>
+    </tr>
+    <tr id="secondraw">
+        <td>shyam</td>
+        <td>54321</td>
+    </tr>
+  </table>  
+  <button>reverse</button>
+</body>
+<script>
+    var a=document.querySelector('#firstraw').innerHTML
+    var b = document.querySelector('#secondraw').innerHTML
+    var btn=document.querySelector('button')
+    var c=a
+    btn.onclick=()=>{
+        document.querySelector('#firstraw').innerHTML=b
+        document.querySelector('#secondraw').innerHTML=c
+    }
+
+</script>
+</html>
